@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: rgb(236, 229, 229);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about{
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+}
+
+.about .about-img{
+    width: 25%; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 15%;
+}
+
+.about .about-img:hover{
+    z-index: 99;
+}
+
+.about .about-img::before{
+    position: absolute;
+    content: "WELCOME EVERYONE TO MSP";
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 47px;
+    width: 90%;
+    left: -100%;
+    border-radius: 15%;
+    line-height: 50px;
+    letter-spacing: 3px;
+    padding: 50% 14px;
+    background-color: rgba(46, 45, 45, 0.827);
+    transition: 1s all;
+    opacity: 0;
+    z-index: 999;
+}
+
+.about .about-img:hover::before{
+    left:0;
+    opacity: 1;
+}
+
+.about .about-img img{
+    width: 100%;
+    transition: 1s all;
+}
+
+.about .about-img:hover img{
+    transform: scale(1.4,1.4);
+}
+
+.about .about-time{
+    font-family: "Kanit", sans-serif;
+    background-color: white;
+    font-weight: bold;
+    position: absolute;
+    padding: 3px 5px;
+    bottom: 0;
+    left: 17%;
+    border: solid 4px rgb(134, 132, 132);
+    border-radius: 8px;
+    z-index: 9999;
+}
+
+.about .about-header{
+    position: absolute;
+    top: 6%;
+    left: 20%;
+    font-family: "Kanit", sans-serif;
+    line-height: 85px;
+}
+
+.about .about-header h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.about .about-header p{
+    font-size: 100px;
+    font-weight: 200;
+}
+
+.about .about-content{
+    width: 50%;
+    font-weight: 500;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    font-family: "Kanit", sans-serif;
+}
+
+.about .about-content::after , .about .about-content::before{
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    border: solid 4px black ;
+    border-radius: 50%;
+    right:35px;
+}
+
+.about .about-content::before{
+    bottom: -30px;
+    right: 95px;
+}
+
+.about .about-logo{
+    color: rgb(68, 67, 67);
+    font-family: "Kanit", sans-serif;
+    font-size: 40px;
+    position: absolute;
+    height: 80px;
+    right: -100px;
+    width: 380px;
+    background-color: rgb(225, 222, 222);
+    border-radius: 20px;
+}
+
+.about .about-logo h2{
+    font-weight: 600;
+    position: absolute;
+}
+
+.about .about-logo #frist{
+    left: 70px;
+    top: -8px;
+}
+
+.about .about-logo #sacond{
+    right: 43px;
+    top: -8px;
+} 
+
+.about .about-logo .about-logo-colors{
+    position: absolute;
+    height: 80%;
+    width: 100px;
+    left: -90px;
+}
+
+.about .about-logo .about-logo-colors span{
+    position: absolute;
+    height: 10px;
+}
+
+.about .about-logo .about-logo-colors .color1{
+    background-color:rgb(208, 208, 15);
+    right: -55px;
+    top: 20px;
+    width: 30px;
+}
+
+.about .about-logo .about-logo-colors .color2{
+    background-color: darkturquoise;
+    right: -55px;
+    top: 34px;
+    width: 60px;
+}
+
+.about .about-logo .about-logo-colors .color3{
+    background-color: darkturquoise;
+    right: -25px;
+    top: 48px;
+    width: 30px;
+}
+
+.about .about-logo .about-logo-colors .color4{
+    background-color: crimson;
+    right:-45px;
+    top: 48px;
+    width: 15px;
+}
